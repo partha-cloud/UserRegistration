@@ -53,5 +53,22 @@ public static void validEmail()
         System.out.println("Name is Invalid");
     }
 }
+
+public static void validMobileNo()
+{
+    System.out.println("Enter Your Mobile No.");
+    String name = scan.nextLine();
+
+    System.out.println("The Mobile No is: " + name);
+    String pattern =  "^([0-9]{2})[ ]([1-9]{1}[0-9]{9})$";
+    if( name.matches(pattern))
+    {
+        System.out.println("Name is Valid");
+    }
+    else
+    {
+        System.out.println("Name is Invalid");
+    }
+}
 }
 
